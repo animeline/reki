@@ -1,0 +1,10 @@
+{
+  "name": "@yodinha/utils",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "typings/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  }  
+}
