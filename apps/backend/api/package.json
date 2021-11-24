@@ -5,7 +5,7 @@
   "repository": {
     "type": "git",
     "directory": "apps/backend/api",
-    "url": "git+https://github.com/hitechline-cp/urbano-norte.git"
+    "url": "git+https://github.com/izakdvlpr/yodinha-api.git"
   },
   "scripts": {
     "dev": "ts-node-dev --respawn --no-notify --transpile-only -r tsconfig-paths/register src/server.ts",
