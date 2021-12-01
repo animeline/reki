@@ -1,37 +1,37 @@
 module.exports = {
-  ignore: ["**/*.d.ts"],
+  ignore: ['**/*.d.ts'],
   presets: [
     [
-      "@babel/preset-typescript",
+      '@babel/preset-typescript',
       {
         allowDeclareFields: true,
         onlyRemoveTypeImports: true,
       },
     ],
     [
-      "@babel/preset-env",
+      '@babel/preset-env',
       {
-        modules: "cjs",
+        modules: 'cjs',
         targets: {
-          node: "10",
+          node: '10',
         },
       },
     ],
   ],
   plugins: [
     [
-      "@babel/plugin-transform-typescript",
+      '@babel/plugin-transform-typescript',
       {
         allowDeclareFields: true,
         onlyRemoveTypeImports: true,
       },
     ],
     [
-      "@babel/plugin-proposal-decorators",
+      '@babel/plugin-proposal-decorators',
       {
         legacy: true,
       },
     ],
-    ["@babel/plugin-proposal-class-properties"],
+    ['@babel/plugin-proposal-class-properties'],
   ],
 };
