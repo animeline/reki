@@ -8,8 +8,8 @@
     "url": "git+https://github.com/izakdvlpr/yodinha-client.git"
   },
   "scripts": {
-    "dev": "ts-node-dev --respawn --no-notify --transpile-only -r tsconfig-paths/register src/server.ts",
-    "start": "node build/server.js",
+    "dev": "ts-node-dev --respawn --no-notify --transpile-only -r tsconfig-paths/register src/index.ts",
+    "start": "node build/index.js",
     "migration:create": "typeorm migration:create -n",
     "typeorm": "ts-node-dev --transpile-only -r tsconfig-paths/register ../../../node_modules/typeorm/cli.js",
     "schema:sync": "yarn build && yarn cross-env NODE_ENV=production yarn typeorm schema:sync",
@@ -17,16 +17,14 @@
     "prebuild": "rimraf build"
   },
   "dependencies": {
+    "@yodinha/logger": "*",
     "@yodinha/utils": "*",
-    "cors": "^2.8.5",
+    "discord.js": "12.5.3",
     "dotenv-defaults": "^3.0.0",
-    "express": "^4.17.1",
     "reflect-metadata": "0.1.13"
   },
   "devDependencies": {
-    "@types/cors": "2.8.10",
     "@types/dotenv-defaults": "2.0.0",
-    "@types/express": "4.17.11",
     "babel-plugin-module-resolver": "^4.1.0",
     "cross-env": "^7.0.3",
     "ts-node": "^10.2.0",
