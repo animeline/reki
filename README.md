@@ -1,3 +1,3 @@
-# yodinha
+# reki
 
-💙 Yodinha é um bot brasileiro que possui diversas outras funcionalidades.
+💙 Reki é um bot brasileiro que possui diversas outras funcionalidades.
