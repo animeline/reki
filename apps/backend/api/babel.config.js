@@ -1,3 +1,13 @@
 module.exports = {
-  extends: '../../../babel.config.js',
+  extends: require.resolve('../babel.config.js'),
+  plugins: [
+    [
+      'module-resolver',
+      {
+        alias: {
+          '@': './build',
+        },
+      },
+    ],
+  ],
 };

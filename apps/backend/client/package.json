@@ -1,18 +1,12 @@
 {
-  "name": "@reki/client",
+  "name": "@reki/api",
   "version": "1.0.0",
+  "author": "Animeline Team <jobs@animeline.xyz>",
   "license": "AGPL-3.0",
-  "repository": {
-    "type": "git",
-    "directory": "apps/backend/client",
-    "url": "git+https://github.com/izakdvlpr/reki-client.git"
-  },
+  "private": true,
   "scripts": {
     "dev": "ts-node-dev --respawn --no-notify --transpile-only -r tsconfig-paths/register src/index.ts",
     "start": "node build/index.js",
-    "migration:create": "typeorm migration:create -n",
-    "typeorm": "ts-node-dev --transpile-only -r tsconfig-paths/register ../../../node_modules/typeorm/cli.js",
-    "schema:sync": "yarn build && yarn cross-env NODE_ENV=production yarn typeorm schema:sync",
     "build": "babel src --extensions \".js,.ts\" --out-dir build --copy-files --no-copy-ignored",
     "prebuild": "rimraf build"
   },
