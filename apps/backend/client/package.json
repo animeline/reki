@@ -1,11 +1,11 @@
 {
-  "name": "@yodinha/client",
+  "name": "@reki/client",
   "version": "1.0.0",
   "license": "AGPL-3.0",
   "repository": {
     "type": "git",
     "directory": "apps/backend/client",
-    "url": "git+https://github.com/izakdvlpr/yodinha-client.git"
+    "url": "git+https://github.com/izakdvlpr/reki-client.git"
   },
   "scripts": {
     "dev": "ts-node-dev --respawn --no-notify --transpile-only -r tsconfig-paths/register src/index.ts",
@@ -17,8 +17,8 @@
     "prebuild": "rimraf build"
   },
   "dependencies": {
-    "@yodinha/logger": "*",
-    "@yodinha/utils": "*",
+    "@reki/logger": "*",
+    "@reki/utils": "*",
     "discord.js": "12.5.3",
     "dotenv-defaults": "^3.0.0",
     "reflect-metadata": "0.1.13"

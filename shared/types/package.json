@@ -1,5 +1,8 @@
 {
-  "name": "@yodinha/types",
+  "name": "@animeline/types",
   "version": "0.0.0",
-  "types": "index.d.ts" 
+  "types": "index.d.ts",
+  "devDependencies": {
+    "yup": "0.32.11"
+  }
 }

@@ -1,4 +1,4 @@
-import { Logger } from '@yodinha/logger';
+import { Logger } from '@reki/logger';
 import { Client } from 'discord.js';
 
 export class Main {

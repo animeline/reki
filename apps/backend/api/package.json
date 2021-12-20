@@ -1,11 +1,11 @@
 {
-  "name": "@yodinha/api",
+  "name": "@reki/api",
   "version": "1.0.0",
   "license": "AGPL-3.0",
   "repository": {
     "type": "git",
     "directory": "apps/backend/api",
-    "url": "git+https://github.com/izakdvlpr/yodinha-api.git"
+    "url": "git+https://github.com/izakdvlpr/reki-api.git"
   },
   "scripts": {
     "dev": "ts-node-dev --respawn --no-notify --transpile-only -r tsconfig-paths/register src/server.ts",
@@ -17,7 +17,7 @@
     "prebuild": "rimraf build"
   },
   "dependencies": {
-    "@yodinha/utils": "*",
+    "@reki/utils": "*",
     "cors": "^2.8.5",
     "dotenv-defaults": "^3.0.0",
     "express": "^4.17.1",
