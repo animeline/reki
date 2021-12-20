@@ -1,5 +1,5 @@
 /// <reference types="react" />
-/// <reference types="@animeline/types/main" />
+/// <reference types="@reki/types/main" />
 
 type PropsWithChildren<T extends AnyObject = {}> = T & {
   children: React.ReactNode;

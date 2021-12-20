@@ -1,4 +1,4 @@
-/// <reference types="@animeline/types/main" />
+/// <reference types="@reki/types/main" />
 
 /* eslint-disable import/order, import/no-self-import */
 

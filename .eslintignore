@@ -1,6 +1,4 @@
-out/
 dist/
 build/
-local/
 typings/
 node_modules/
