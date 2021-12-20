@@ -1,9 +1,14 @@
 {
   "extends": "./tsconfig.paths.json",
   "include": [
-    "src/**/*"
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
   ],
   "compilerOptions": {
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "incremental": true,
+    "jsx": "preserve",
+    "strict": false,
   }
 }

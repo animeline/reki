@@ -5,36 +5,16 @@
   "license": "AGPL-3.0",
   "private": true,
   "scripts": {
-    "dev": "PORT=3002 react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "dev": "next dev -p 3002",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "next": "^12.0.7",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "5.2.0"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@types/react": "^17.0.37",
-    "@types/react-dom": "17.0.3",
-    "@types/react-router-dom": "5.1.7",
-    "customize-cra": "1.0.0",
-    "react-app-rewire-alias": "1.0.3",
-    "react-app-rewired": "2.1.8",
-    "react-scripts": "4.0.3"
+    "@types/react": "^17.0.37"
   }
 }
