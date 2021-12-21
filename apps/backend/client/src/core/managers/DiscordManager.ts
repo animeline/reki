@@ -1,17 +1,18 @@
 import { Logger } from '@reki/logger';
 import { Client } from 'discord.js';
 
-export class Main {
+export class DiscordManager implements Manager {
   public discord: Client;
 
   public logger: Logger;
 
   constructor() {
     this.discord = new Client();
+
     this.logger = new Logger({ scope: 'Client' });
   }
 
-  async init(): Promise<void> {
+  async connect(): Promise<void> {
     this.logger.debug('Starting client...');
 
     await this.discord.login(process.env.DISCORD_TOKEN).then(() => {
