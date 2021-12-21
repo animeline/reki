@@ -6,6 +6,7 @@ module.exports = {
       {
         alias: {
           '@': './build',
+          '@core': './build/core',
         },
       },
     ],
