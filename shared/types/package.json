@@ -1,8 +1,5 @@
 {
   "name": "@reki/types",
   "version": "0.0.0",
-  "types": "index.d.ts",  
-  "devDependencies": {
-    "yup": "0.32.11"
-  }
+  "devDependencies": {}
 }

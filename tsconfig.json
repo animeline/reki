@@ -1,5 +1,4 @@
 {
-  "files": ["reki-env.d.ts"],
   "exclude": ["dist", "build", "typings", "node_modules"],
   "compilerOptions": {
     "baseUrl": ".",
