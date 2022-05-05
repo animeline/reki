@@ -4,6 +4,8 @@ from discord.ext import commands
 
 from dotenv import load_dotenv
 
+from utils import custom_prefix
+
 load_dotenv()
 
 class Reki(commands.AutoShardedBot):
@@ -45,18 +47,6 @@ class Reki(commands.AutoShardedBot):
   
   def run(self):
     super().run(os.environ['DISCORD_TOKEN'])
-    
-def custom_prefix(bot: Reki, msg: discord.Message):
-  user_id = bot.user.id
-  base = [f'<@!{user_id}> ', f'<@{user_id}> ']
-  
-  if msg.guild is None:
-    base.append('!')
-    base.append('?')
-  else:
-    base.extend(bot.prefixes.get(msg.guild.id, ['?', '!']))
-    
-  return base
 
 if __name__ == '__main__':
   bot = Reki()

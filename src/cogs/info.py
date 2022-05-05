@@ -1,9 +1,9 @@
 from discord.ext import commands
 
-from bot import Reki 
+from src.bot import Reki
 
 class Information(commands.Cog):
-  def __init__(self, reki):
+  def __init__(self, reki: Reki):
     self.reki = reki
     
   @commands.command(name='ping', aliases=['latency'])
