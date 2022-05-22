@@ -1,6 +1,6 @@
 from discord.ext import commands
 
-from src.bot import Reki
+from bot import Reki
 
 class Information(commands.Cog):
   def __init__(self, reki: Reki):

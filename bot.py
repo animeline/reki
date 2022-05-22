@@ -4,9 +4,17 @@ from discord.ext import commands
 
 from dotenv import load_dotenv
 
-from utils import custom_prefix
-
 load_dotenv()
+
+def custom_prefix(bot, msg: discord.Message):
+  user_id = bot.user.id
+  base = [f'<@!{user_id}> ', f'<@{user_id}> ']
+  
+  if msg.guild is None:
+    base.append('rk!')
+    base.append('r$')
+    
+  return base
 
 class Reki(commands.AutoShardedBot):
   def __init__(self):
@@ -27,9 +35,9 @@ class Reki(commands.AutoShardedBot):
       try:
         self.load_extension('cogs.' + cog)
       except Exception as e:
-        print(f'Falha ao carregar a Cog \'{cog}\':')
+        print(f'Failed to load Cog \'{cog}\':')
       else:
-        print(f'Cog {cog} carregada com sucesso. ({i}/{total_cogs})')
+        print(f'Cog {cog} successfully loaded. ({i}/{total_cogs})')
         
         
   async def on_ready(self):
