@@ -1,3 +1,3 @@
 # reki
 
-💖 Reki é um bot brasileiro que possui diversas funcionalidades para seu servidor de Discord.
+💖 Reki é um bot para discord feito em python MUITO ÚTIL.
